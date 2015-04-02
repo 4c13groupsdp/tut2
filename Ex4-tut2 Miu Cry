@@ -1,0 +1,22 @@
+import java.util.Scanner;
+public class Ex24
+{
+    public static void main(String [] args)
+    {
+        int quaters, dimes, nickles, pennies;
+        int n, m, x, y;
+        double dollars;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("How many quaters do you have?");
+        n = sc.nextInt();
+        System.out.println("How many dimes do you have?");
+        m = sc.nextInt();
+        System.out.println("How many nickles do you have?");
+        x = sc.nextInt();
+        System.out.println("How many pennies do you have?");
+        y = sc.nextInt();
+        dollars = (n*0.25) + (m*0.1) + (x*0.05) + (y*0.1);
+        System.out.println("Your total money is: $");
+        System.out.printf("%1.2f", dollars);
+    }
+}
