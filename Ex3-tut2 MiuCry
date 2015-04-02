@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class Ex23
+{
+   public static void main() 
+   {
+      String name;
+      String upperCaseName;
+      Scanner stdin = new Scanner(System.in);
+      System.out.println("Enter user's name: "); 
+      name = stdin.nextLine();
+      upperCaseName = name.toUpperCase();
+      System.out.println("Hello, " + upperCaseName + ", nice to meet you!");
+   }
+}
