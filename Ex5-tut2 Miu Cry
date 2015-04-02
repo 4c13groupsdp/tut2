@@ -1,0 +1,23 @@
+import userlib.TextIO.*;
+public class Ex15
+{ 
+  public static void main() 
+  {
+   int n;// = No_eggs;
+   int  z;// = gross
+   int  p;// = dozens;
+   int q;// = dozens;
+    TextIO.put("Enter the number of eggs which you have: ");
+    n = TextIo.getInt();
+    TextIO.put("The number of gross you have is: ");
+    z = n/144;
+    TextIO.put("The number of dozen eggs which you have is: ");
+    p = (n-144*z)/12;
+    TextIO.put("The number of extra eggs are left over is: ");
+    q = (n-144*z)%12;
+    TextIO.putln(z); 
+    TextIO.putln(p);
+    TextIO.putln(q);
+    TextIO.putln();
+  }
+}
