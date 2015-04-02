@@ -1,0 +1,19 @@
+
+import java.util.Scanner;
+public class Ex22
+{
+    public static void main()
+    {
+        int d1, d2, total;
+        d1 = (int) (Math.random()*6)+1;
+        d2 = (int) (Math.random()*6)+1;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Choose two dice for you!");
+        System.out.println("The first dice comes up: "+d1);
+        d1 = sc.nextInt();
+        System.out.println(" The second dice comes up is: "+d2);
+        d2 = sc.nextInt();
+        System.out.println(" Your total roll is: "+(d1+d2));
+        total = sc.nextInt();
+    }
+}
